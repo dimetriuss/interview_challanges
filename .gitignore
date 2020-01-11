@@ -1,0 +1,14 @@
+.*
+*.*~
+*.pyc
+*.pyo
+*.sublime-project
+*.sublime-workspace
+*.sw[op]
+.project
+.pydevproject
+.idea/
+docs/_build
+_*.rst
+.pip-freeze
+*.egg-info
