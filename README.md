@@ -1,2 +1,2 @@
-# interview_challanges
-Collection of different coding challanges from interviews
+# interview_challenges
+Collection of different coding challenges from interviews (python3)
