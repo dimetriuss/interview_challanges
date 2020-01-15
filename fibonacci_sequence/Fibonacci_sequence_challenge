@@ -1,0 +1,27 @@
+Fibonacci sequence in math is numbers sequence where each next number is the sum of the two preceding, starting from 1,1
+Eg. 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 .....
+
+Possible interview questions:
+Can you create a function to print N-th numbers of Fibonacci sequence?
+Can you create a function to count N-th number of Fibonacci sequence?
+How much solutions to find number from Fibonacci sequence do you know?
+Can you explain pros and cons for iterative, recursive and math methods to find number from Fibonacci sequence?
+(recursive - depends on recursion depth, time complexity O(2**N), space complexity O(N) - the worst solution;
+iterative - time complexity O(N), space complexity O(1);
+math method - time complexity and space complexity O(1) - the best choice if you know about it;)
+
+
+In the fibonacci.py you will see 3 methods implementations used to find Nth number of Fibonacci sequence:
+1) Recursive method
+2) Iterative method
+3) Math method via golden ration (https://demonstrations.wolfram.com/GeneralizedFibonacciSequenceAndTheGoldenRatio/)
+
+In the test_fibonacci_sequence.py you will find possible tests examples which are written with usage of unittest module.
+To run them you need to navigate to:
+$ cd your_path_to/interview_challenges
+Run:
+$  python -m unittest discover fibonacci_sequence -v
+
+You can play with test_recursive_fibonacci_number, test_iterative_fibonacci_number and
+test_golden_ratio_fibonacci_number to compare timings for searching of 100th, 500th, 1000th ... number of
+Fibonacci sequence.
