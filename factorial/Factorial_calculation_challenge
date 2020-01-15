@@ -1,23 +1,24 @@
 In Mathematics, the factorial of n is denoted by n! and calculated by the product of integer numbers from 1 to n.
 Eg. 5! = 5*4*3*2*1 = 120
 
-Possible interview question:
+Possible interview questions:
 Can you implement the function which will calculate the factorial of the number N?
-Or tell us how much ways can you name to calculate the factorial of a number?
-Or can you explain pros and cons for iterative, recursive and math module ways of the factorial calculation?
-(In-short: math module way - fast as it is based on C,
+Or tell us how much methods can you name to calculate the factorial of a number?
+Or can you explain pros and cons for iterative, recursive and math module methods of the factorial calculation?
+(In-short: math module method - fast as it is based on C,
 recursive way - depends on recursion depth which is set to 1K calls by default for python interpreter and it is not
-very good idea to increase it - anyway it will just little bit move the time of bottleneck,
-iterative way is commonly faster then recursive.
+very good idea to increase it - anyway it will just little bit move the time of bottleneck - the worst implementation,
+iterative method is faster then recursive, especially on greater input values.
 You can run the tests few times and take a look at the timing results for factorial calculations of numbers in the
 range(0, 10) using each of 3 methods.
 Also you can extend the tests to check timings of the factorial calculation for a greater numbers -
-like 1000, 10000, 100000, etc and play around it to see the difference in timing for each of the implementation ways.)
+like 1000, 10000, 100000, etc and play around it to see the difference in timing for each of the implementation methods)
 
-In the factorial.py you will see 3 ways of implementation:
+In the factorial.py you will see 3 methods of implementation:
 1) Iterative way
 2) Recursive way
-3) Math module way implemented on C in the core (https://hg.python.org/cpython/file/7937aa6b7e92/Modules/mathmodule.c#l1218)
+3) Math module way implemented on C in the core
+(https://hg.python.org/cpython/file/7937aa6b7e92/Modules/mathmodule.c#l1218)
 
 In the test_factorial.py you will find possible tests examples which are written with usage of unittest module.
 To run them you need to navigate to:
