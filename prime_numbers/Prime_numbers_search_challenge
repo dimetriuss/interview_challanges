@@ -10,7 +10,8 @@ In the prime_number.py you can find prime number search method:
 1) Iterative method
 2) Math method via Eratosthenes sieve (https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
 
-In the test_prime_numbers_search.py you will find possible tests examples which are written with usage of unittest module.
+In the test_prime_numbers_search.py you will find possible tests examples which are written with usage of unittest
+module.
 To run them you need to navigate to:
 $ cd your_path_to/interview_challenges
 Run:
