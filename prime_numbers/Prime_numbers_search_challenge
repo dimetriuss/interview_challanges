@@ -1,0 +1,24 @@
+A prime number (or a prime) is a natural number greater than 1 that cannot be formed by multiplying two smaller
+natural numbers. (can be divided just on 1 or itself)
+
+Possible interview questions:
+Can you create the method to print N prime numbers from range?
+Can you find Nth prime number from numbers range?
+
+
+In the prime_number.py you can find prime number search method:
+1) Iterative method
+2) Math method via Eratosthenes sieve (https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
+
+In the test_prime_numbers_search.py you will find possible tests examples which are written with usage of unittest
+module.
+To run them you need to navigate to:
+$ cd your_path_to/interview_challenges
+Run:
+$  python -m unittest discover prime_numbers -v
+
+Note: take a look at the test_which_method_to_find_primes_is_faster_on_great_number_ranges and play with upper_number
+value. When upper_number value is low for both methods - iterative way commonly win on my interpreter
+(I've tried 10 attempts - in 8 of them iterative method was faster), but when
+upper_number value is 10K, 100K, 1M - you will see the difference and power of math)) - Eratosthenes sieve will be
+the winner and will save a lot of time.
