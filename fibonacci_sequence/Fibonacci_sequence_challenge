@@ -15,6 +15,7 @@ In the fibonacci.py you will see 3 methods implementations used to find Nth numb
 1) Recursive method
 2) Iterative method
 3) Math method via golden ration (https://demonstrations.wolfram.com/GeneralizedFibonacciSequenceAndTheGoldenRatio/)
+Also there is method that let you to get fibonacci numbers sequence from the values range.
 
 In the test_fibonacci_sequence.py you will find possible tests examples which are written with usage of unittest module.
 To run them you need to navigate to:
