@@ -1,6 +1,7 @@
 import unittest
 import time
-from prime_numbers import find_prime_numbers_from_range, find_prime_numbers_from_range_with_eratosthenes_sieve
+from prime_numbers import find_prime_numbers_from_range, find_prime_numbers_from_range_with_eratosthenes_sieve, \
+    find_prime_numbers_from_any_range
 
 
 class TestPrimeNumbersSearch(unittest.TestCase):
@@ -37,3 +38,28 @@ class TestPrimeNumbersSearch(unittest.TestCase):
             upper_number, result_time_eratosthenes_sieve))
         self.assertListEqual(result1, result2)
         self.assertLess(result_time_eratosthenes_sieve, result_time_iterative)
+
+    def test_search_primes_numbers_from_any_range(self):
+        with self.assertRaises(ValueError):
+            find_prime_numbers_from_any_range(0, 1)
+        with self.assertRaises(ValueError):
+            find_prime_numbers_from_any_range(2, 1)
+        with self.assertRaises(TypeError):
+            find_prime_numbers_from_any_range(2.13, 4.6)
+
+        result = find_prime_numbers_from_any_range(2, 100)
+        expected_result = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
+                           61, 67, 71, 73, 79, 83, 89, 97]
+        self.assertListEqual(expected_result, result)
+
+        result = find_prime_numbers_from_any_range(50, 100)
+        expected_result = [53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+        self.assertListEqual(expected_result, result)
+
+        result = find_prime_numbers_from_any_range(89, 97)
+        expected_result = [89, 97]
+        self.assertListEqual(expected_result, result)
+
+        result = find_prime_numbers_from_any_range(90, 96)
+        expected_result = []
+        self.assertListEqual(expected_result, result)
