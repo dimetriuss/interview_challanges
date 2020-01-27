@@ -28,3 +28,21 @@ def find_prime_numbers_from_range_with_eratosthenes_sieve(upper_number: int) -> 
                 numbers_range[number] = 0
         filtered_number += 1
     return primes
+
+
+def find_prime_numbers_from_any_range(low_value: int, high_value: int) -> list:
+    if low_value < 2:
+        raise ValueError("Please input low_value >= 2")
+    if high_value < 1 or low_value >= high_value:
+        raise ValueError("Please input high_value > low_value >= 2")
+
+    primes = []
+    for num in range(2, high_value + 1):
+        for i in primes:
+            if num % i == 0:
+                break
+        else:
+            primes.append(num)
+
+    primes_in_range = [x for x in primes if x >= low_value]
+    return primes_in_range
