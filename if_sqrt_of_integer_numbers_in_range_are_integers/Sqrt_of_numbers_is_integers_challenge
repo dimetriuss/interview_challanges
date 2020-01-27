@@ -1,0 +1,11 @@
+The interview question was:
+Create a method which will be able to return just that values from integers range so their sqrt's will be integers.
+
+In the is_sqrt_integer.py you can find possible solution.
+
+In the test_sqrt_of_numbers_are_integers.py you will find possible tests examples which are written with usage
+of unittest module.
+To run them you need to navigate to:
+$ cd your_path_to/interview_challenges
+Run:
+$  python -m unittest discover if_sqrt_of_integer_numbers_in_range_are_integers -v
