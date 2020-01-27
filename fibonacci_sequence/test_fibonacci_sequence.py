@@ -1,7 +1,7 @@
 import unittest
 import time
 from fibonacci import find_fibonacci_number_recursive, find_fibonacci_number_iterative, \
-	find_fibonacci_number_golden_ratio
+	find_fibonacci_number_golden_ratio, find_fibonacci_numbers_in_values_range
 
 
 class TestFibonacciSequenceNumber(unittest.TestCase):
@@ -57,3 +57,27 @@ class TestFibonacciSequenceNumber(unittest.TestCase):
 			find_fibonacci_number_recursive(complex(-1.0, 0.0))
 			find_fibonacci_number_iterative("33")
 			find_fibonacci_number_golden_ratio("111")
+
+	def test_find_fibonacci_numbers_in_values_range(self):
+		with self.assertRaises(ValueError):
+			find_fibonacci_numbers_in_values_range(0, 0)
+		with self.assertRaises(ValueError):
+			find_fibonacci_numbers_in_values_range(1, 1)
+		with self.assertRaises(ValueError):
+			find_fibonacci_numbers_in_values_range(-5, 1)
+
+		result = find_fibonacci_numbers_in_values_range(0, 100)
+		expected_result = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+		self.assertListEqual(expected_result, result)
+
+		result = find_fibonacci_numbers_in_values_range(1, 34)
+		expected_result = [1, 1, 2, 3, 5, 8, 13, 21, 34]
+		self.assertListEqual(expected_result, result)
+
+		result = find_fibonacci_numbers_in_values_range(21, 34)
+		expected_result = [21, 34]
+		self.assertListEqual(expected_result, result)
+
+		result = find_fibonacci_numbers_in_values_range(22, 33)
+		expected_result = []
+		self.assertListEqual(expected_result, result)
