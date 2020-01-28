@@ -1,0 +1,16 @@
+The interview question was:
+Given a string "aabddzxxggg" implement a Run Length Encoder and Decoder of this.
+The RLE is of the form "NC" where N is the number of times character C occurs, e.g.:
+1) encoder: "aabddzxxggga" -> "2a1b2d1z2x3g1a"
+2) decoder: "2a1b2d1z2x3g1a" -> "aabddzxxggga"
+
+In the rle_encoder.py you can find possible solutions:
+1) With 're' module usage
+2) Native way
+
+In the test_rle_encoder.py you will find possible tests examples which are written with usage
+of unittest module.
+To run them you need to navigate to:
+$ cd your_path_to/interview_challenges
+Run:
+$ python -m unittest discover string_RLE_encoding_and_decoding -v
