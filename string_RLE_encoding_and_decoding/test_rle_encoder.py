@@ -2,7 +2,7 @@ import unittest
 from rle_encoder_decoder import rle_encode_re, rle_decode_re, rle_encode_native, rle_decode_native
 
 
-class TestSqrtIntegers(unittest.TestCase):
+class TestRleEncoding(unittest.TestCase):
 
     def test_rle_encode(self):
         input = "aabddzxxggga"
