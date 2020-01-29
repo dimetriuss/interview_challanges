@@ -1,0 +1,11 @@
+The interview question was:
+Write the method which count word scores for Scrabble game.
+
+In the scrabble.py you can find possible solutions.
+
+In the test_scrabble.py you will find possible tests examples which are written with usage
+of unittest module.
+To run them you need to navigate to:
+$ cd your_path_to/interview_challenges
+Run:
+$ python -m unittest discover scrabble_words -v
