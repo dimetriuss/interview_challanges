@@ -1,0 +1,12 @@
+The interview question was:
+Given the time string in format like "08:59:59AM".
+Create method to convert 12 hours time string to 24 hours time string.
+
+In the 12_to_24_hours_time_converter.py you can find possible solution.
+
+In the test_12_to_24_hours_time_converter.py you will find possible tests examples which are written with usage
+of unittest module.
+To run them you need to navigate to:
+$ cd your_path_to/interview_challenges
+Run:
+$ python -m unittest discover 12_to_24_hours_time_converter -v
