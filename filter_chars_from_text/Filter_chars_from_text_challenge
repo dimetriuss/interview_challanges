@@ -1,7 +1,7 @@
 The interview question was:
 Create method to remove any set of characters from text.
 
-In the chars_filter.py you can find possible solutions.
+In the chars_filter.py you can find possible solution.
 
 In the test_chars_filter.py you will find possible tests examples which are written with usage
 of unittest module.
