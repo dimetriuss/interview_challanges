@@ -1,0 +1,11 @@
+The interview question was:
+Create method to remove any set of characters from text.
+
+In the chars_filter.py you can find possible solutions.
+
+In the test_chars_filter.py you will find possible tests examples which are written with usage
+of unittest module.
+To run them you need to navigate to:
+$ cd your_path_to/interview_challenges
+Run:
+$ python -m unittest discover filter_chars_from_text -v
