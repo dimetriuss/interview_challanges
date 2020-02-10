@@ -1,5 +1,5 @@
 
-def filter_text(text, filtered_chars_set):
+def filter_text(text: str, filtered_chars_set: tuple) -> str:
     output_text = ''
     for i in text:
         if i not in filtered_chars_set:
